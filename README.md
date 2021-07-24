@@ -1,16 +1,7 @@
-# Overview
+# Auto Irrigation System
 
-Home automation projects are always intereting and satisfying. I implemented an automated irrigation system for house plants to save the plants when we travel for days and weeks. 
-
-I followed few websites to understand the wiring for this and provided the links in the end. Wiring is not complicated so with very minimal knowledge on electrical and electronics it is possible to setup this. 
-
-Once the wiring is complete then we can add n number of logic for watering and customize of our needs. In my case, scheduled the program to check the soil moisture level for every 4 hours and water the plants if the soil moisture is low. Created a website to water the plants on demand basis. 
-
-This is an excellent IoT project and can be completed in a day if all the components and tools required are there.
-
-Please be careful and use proper tools while working with electric components expecially when the power is on. 
-
-
+  Raspberry pi powered auto irrigation system helps watering the plants automatically when the soil moisture goes below a certain level. Soil moisture sensor conneted to raspberry pi can read the moisture level and rpi can start the motor pump based on the moisture level read. 
+  
 # Components
 ## Hardware
 
@@ -23,7 +14,9 @@ Please be careful and use proper tools while working with electric components ex
 
 ## Software
 
-I implemented this using Python. Stored the watered logs in MySql database (Optional), storing the data can be useful if you want to know the watering history / pattern. Using Twilio APIs to send text message to my phone if the plant is watered (Optional)
+PYthon is the programming language.
+Mysql to store the watering history. 
+Twilio APIs to send text message when the plant is watered. 
 
 ## Tools
 
@@ -43,7 +36,7 @@ USB power supply: Take any unused USB cable or get one from local thrift stores.
 
 I followed the same wiring setup in this [website](https://www.hackster.io/ben-eagan/raspberry-pi-automated-plant-watering-with-website-8af2dc)
 
-![Wiring](https://github.com/madras-coders/Home-Automation/blob/master/rpi-water-irrigation-system/static/img/wiring.png)
+![Wiring](https://github.com/mahesh-saravana/blobstore/blob/master/images/circuit_wiring.png)
 
 Water Sensor - plug the positive lead from the water sensor to pin 2, and the negative lead to pin 6. Plug the signal wire (yellow) to pin 8.
 
@@ -56,7 +49,7 @@ Pump - Connect your pump to a power source, run the black ground wire between sl
 
 ## irrigation_app.py
 
-File contains the program to read the moisture sensor values, start and stop the pump, store the logs and send text message if watered. To setup a automated watering system this file is enough and it has all the functionalities. MySql to store the logs and sending text message is optional. 
+File contains the program to read the moisture sensor values, start and stop the pump, store the logs and send text message if watered. 
 
 ## Scheduling
 
