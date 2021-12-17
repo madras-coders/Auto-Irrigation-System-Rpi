@@ -14,7 +14,7 @@
 
 ## Software
 
-PYthon is the programming language.
+Programming language used is Python.
 Mysql to store the watering history. 
 Twilio APIs to send text message when the plant is watered. 
 
