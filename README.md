@@ -1,6 +1,6 @@
 # Auto Irrigation System
 
-  Raspberry pi powered auto irrigation system helps watering the plants automatically when the soil moisture goes below a certain level. Soil moisture sensor conneted to raspberry pi can read the moisture level and rpi can start the motor pump based on the moisture level read. 
+  Raspberry pi powered auto irrigation system helps watering the plants automatically when the soil moisture drops below a certain level. Raspberry pi with the help of a soit moisture sensor reads the moisture level and starts the motor pump.
   
 # Components
 ## Hardware
